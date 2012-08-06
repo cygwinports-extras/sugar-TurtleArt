@@ -1,0 +1,13 @@
+SUGAR_TYPE="fructose"
+inherit sugar
+
+REQUIRES="gstreamer0.10-plugins-base gstreamer0.10-plugins-good"
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	# requires alsasrc
+	rm -fr plugins/audio_sensors/ pysamples/grecord.py*
+	# requires v4l2src
+	rm -fr plugins/camera_sensor/
+}
+
