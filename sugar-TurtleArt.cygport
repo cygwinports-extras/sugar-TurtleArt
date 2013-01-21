@@ -1,3 +1,6 @@
+NAME="sugar-TurtleArt"
+VERSION=169
+RELEASE=1
 SUGAR_TYPE="fructose"
 inherit sugar
 
